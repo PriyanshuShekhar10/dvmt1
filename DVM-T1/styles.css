@@ -1,0 +1,413 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+
+/* NAVIGATION BAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1800px) {
+  .section-1{
+    width: 1123px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-3{
+    width: 1123px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-4{
+    width: 1123px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1123px) {
+
+}
+
+
+
+html {
+
+    font-family: 'Inter', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+  box-shadow:
+      2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.menu{
+  font-style: "inter";
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+.hamburger {
+    display: none;
+}
+.menu-toggle {
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+td{
+  padding: 5px;
+}
+
+.bar {
+    display: block;
+    width: 12.5px;
+    height: 1.5px;
+    margin: 2.5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+    transition: 0.7s;
+}
+
+.nav-logo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: Black;
+}
+
+
+.btn{
+  font-family: "Inter";
+  font-size: 0.9rem;
+
+  background: #2c36ef;
+  width: 170px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 300px;
+  cursor: pointer;
+
+}
+i{
+  padding:0 5px;
+}
+.btn:hover{
+  background: #9e1ce2;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        /* transition: 0.3s;  might implement */
+        align-items: left;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 2;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(4px) rotate(45deg);
+        transform: translateY(4px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-4px) rotate(-45deg);
+        transform: translateY(-4px) rotate(-45deg);
+    }
+}
+
+
+/* JUMBOTRON SECTION */
+h1{
+  font-size: 300%;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.jumbotron{
+  margin: 5rem 3rem;
+}
+
+.jumbotron-text{
+  margin:
+}
+
+
+.row{
+  margin: 3rem 3rem;
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+/* .image-section-1{
+  width: auto;
+  height: 378px;
+}
+
+.img-1{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.img-2{
+  position: relative;
+  top: 0;
+  left: 0;
+} */
+
+
+.column-1{
+  margin: 10rem 0 2rem;
+}
+
+.column-2{
+  margin: 2rem auto 10rem auto;
+  align-items: center;
+}
+
+#parent{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* SECTION 2 */
+
+.section-2{
+  background-image: url(img/gradient1.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#section-2 {
+  text-align: center;
+  padding: 25px;
+  background: url(img/gradient.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: white;
+  font-family: 'Nanum Myeongjo', sans-serif;
+  padding: 4rem 0 3rem;
+
+  background-color: white;
+
+}
+
+
+/* SECTION 3 */
+
+
+.column_1{
+  float: left;
+  width: 50%;
+  padding: 4rem 3rem 4rem;
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .column_1 {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+
+}
+/* Clear floats after the columns */
+.row_1:after {
+  content: "";
+  display: table;
+  clear: both;
+  height:20rem;
+}
+
+.features{
+  padding: 1rem;
+  text-align: center;
+
+}
+
+.features p{
+  color: grey;
+  font-size: 70%;
+  padding: 5px
+}
+.fa-3x {
+        font-size: 72px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#2b37f0), to(#8a1ee4));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+
+/* SECTION 4 */
+
+.column-s4 {
+  float: left;
+  width: 50%;
+  margin: 3rem auto;
+}
+
+.row-section-4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 768px){
+  .column-s4{
+    width: 100%;
+    float: none;
+  }
+}
+
+
+/* SECTION 5 */
+
+.section-5{
+  color: white;
+  background-image: url(img/section-5-bg.jpg);
+  width: 100%;
+
+  font-family: 'Nanum Myeongjo', sans-serif;
+  padding-left: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+
+}
+.button-s4 {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 1px;
+  text-decoration: none;
+
+}
+
+.button-s4:hover {
+  background: white;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.9s;
+}
+.h1-s4{
+  padding-top: 100px;
+  margin-bottom: 10px;
+}
+
+.span-s5{
+  padding-top: 500px;
+  z-index: 2;
+}
+
+/* SECTION 6 */
+
+.section-6{  text-align: center;
+  padding: 25px;
+  background: url(img/gradient.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: white;
+  font-family: 'Nanum Myeongjo', sans-serif;
+  padding: 4rem 0 3rem;
+
+  background-color: white;}
+
+
+
+.end-section a{
+  color: white;
+  font-size: 50%;
+  margin-left: auto 20px;
+}
