@@ -30,6 +30,15 @@
 @media screen and (min-width: 1123px) {
 
 }
+@media screen and (max-width: 434px) {
+
+  #parent{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+}
+
 
 
 
